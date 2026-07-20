@@ -1,0 +1,384 @@
+<!DOCTYPE html><html lang="en" class="dark" style="overflow-x: hidden; position: relative;"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "surface-tint": "#00daf3",
+                            "surface-container-lowest": "#090e1b",
+                            "secondary-fixed": "#d9e2fe",
+                            "surface": "#0e1320",
+                            "surface-container-highest": "#303443",
+                            "primary-container": "#00e5ff",
+                            "on-secondary-container": "#acb5cf",
+                            "primary-fixed-dim": "#00daf3",
+                            "secondary-container": "#3e465d",
+                            "error-container": "#93000a",
+                            "on-surface-variant": "#bac9cc",
+                            "inverse-primary": "#006875",
+                            "on-primary-container": "#00626e",
+                            "outline-variant": "#3b494c",
+                            "on-background": "#dee2f5",
+                            "inverse-surface": "#dee2f5",
+                            "primary": "#c3f5ff",
+                            "on-secondary": "#273045",
+                            "surface-container-high": "#252a38",
+                            "surface-container": "#1a1f2d",
+                            "secondary-fixed-dim": "#bdc6e1",
+                            "on-tertiary-fixed": "#0b1c30",
+                            "surface-dim": "#0e1320",
+                            "outline": "#849396",
+                            "on-secondary-fixed": "#121b2f",
+                            "secondary": "#bdc6e1",
+                            "on-surface": "#dee2f5",
+                            "on-primary-fixed-variant": "#004f58",
+                            "on-primary": "#00363d",
+                            "on-tertiary-container": "#4a5a70",
+                            "surface-variant": "#303443",
+                            "tertiary-fixed-dim": "#b7c8e1",
+                            "tertiary-container": "#c1d2ec",
+                            "tertiary": "#e4edff",
+                            "surface-bright": "#343948",
+                            "inverse-on-surface": "#2b303e",
+                            "on-secondary-fixed-variant": "#3e465d",
+                            "tertiary-fixed": "#d3e4fe",
+                            "surface-container-low": "#161b29",
+                            "background": "#0e1320",
+                            "error": "#ffb4ab",
+                            "primary-fixed": "#9cf0ff",
+                            "on-primary-fixed": "#001f24",
+                            "on-tertiary": "#213145",
+                            "on-error-container": "#ffdad6",
+                            "on-error": "#690005",
+                            "on-tertiary-fixed-variant": "#38485d"
+                        },
+                        "borderRadius": {
+                            "DEFAULT": "0.125rem",
+                            "lg": "0.25rem",
+                            "xl": "0.5rem",
+                            "full": "0.75rem"
+                        },
+                        "spacing": {
+                            "container-max": "1280px",
+                            "margin-mobile": "16px",
+                            "unit": "4px",
+                            "margin-desktop": "64px",
+                            "gutter": "24px"
+                        },
+                        "fontFamily": {
+                            "headline-md": ["Geist"],
+                            "body-md": ["Inter"],
+                            "label-mono": ["JetBrains Mono"],
+                            "body-lg": ["Inter"],
+                            "headline-lg-mobile": ["Geist"],
+                            "headline-lg": ["Geist"],
+                            "display-xl": ["Geist"],
+                            "button-text": ["Inter"]
+                        },
+                        "fontSize": {
+                            "headline-md": ["30px", { "lineHeight": "38px", "fontWeight": "500" }],
+                            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                            "label-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                            "headline-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                            "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                            "display-xl": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.04em", "fontWeight": "700" }],
+                            "button-text": ["15px", { "lineHeight": "20px", "fontWeight": "600" }]
+                        }
+                    },
+                },
+            }
+        } catch (_e) {}
+    }catch(_e){}</script><style>.hero-aura{
+                                position:absolute;
+                                top:80px;
+                                left:0;
+                                width:100%;
+                                height:700px;
+                                overflow:hidden;
+                                pointer-events:none;
+                                z-index:0;
+                            }
+
+                            /* Large soft halo */
+                            .hero-halo{
+                                position:absolute;
+                                top:0;
+                                left:50%;
+                                transform:translateX(-50%);
+                                width:1400px;
+                                height:700px;
+
+                                background:
+                                    radial-gradient(
+                                        ellipse at top,
+                                        rgba(0,218,243,.28) 0%,
+                                        rgba(0,218,243,.14) 22%,
+                                        rgba(0,218,243,.05) 45%,
+                                        transparent 75%
+                                    );
+
+                                filter:blur(10px);
+                            }
+
+                            /* Bright source at the very top */
+                            .hero-light{
+                                position:absolute;
+                                top:-20px;
+                                left:50%;
+                                transform:translateX(-50%);
+
+                                width:12px;
+                                height:12px;
+                                border-radius:50%;
+
+                                background:#9cf0ff;
+
+                                box-shadow:
+                                    0 0 18px #9cf0ff,
+                                    0 0 40px #00daf3,
+                                    0 0 80px rgba(0,218,243,.8),
+                                    0 0 140px rgba(0,218,243,.45);
+
+                                animation:pulse 4s ease-in-out infinite;
+                            }
+
+                            @keyframes pulse{
+                                0%,100%{
+                                    opacity:.8;
+                                    transform:translateX(-50%) scale(1);
+                                }
+
+                                50%{
+                                    opacity:1;
+                                    transform:translateX(-50%) scale(1.15);
+                                }
+                            }</style></head><body class="font-body-md text-body-md overflow-x-hidden bg-background text-on-background">
+
+<!-- TopNavBar -->
+<!-- <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm">
+    <div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto h-16 md:h-20">
+        <div class="flex items-center gap-4">
+            <img src="imgs/logo2.png" alt="Kavnet Logo" class="h-12 md:h-14 w-auto">
+        </div>
+        <div class="hidden md:flex gap-8 items-center">
+            <a href="#" class="font-button-text text-button-text text-on-surface-variant hover:text-on-surface transition-colors">Features</a>
+            <a href="#" class="font-button-text text-button-text text-on-surface-variant hover:text-on-surface transition-colors">Use Cases</a>
+            <a href="#" class="font-button-text text-button-text text-on-surface-variant hover:text-on-surface transition-colors">Pricing</a>
+        </div>
+        <div class="flex gap-4 items-center">
+            <button class="hidden lg:block font-button-text text-button-text px-4 py-2 text-on-surface-variant border border-outline-variant/50 rounded hover:border-primary-fixed-dim transition-all">Join Waitlist</button>
+            <button class="bg-primary-fixed-dim text-on-primary-fixed px-6 py-2 rounded font-button-text text-button-text hover:bg-primary-container logic-glow active:scale-95 transition-all">Request Demo</button>
+        </div>
+    </div>
+</nav> -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm">
+    <div class="relative flex items-center justify-between px-gutter py-4 max-w-container-max mx-auto h-16 md:h-20">
+
+        <!-- Left -->
+        <div class="flex items-center gap-4">
+            <a href="index.html" aria-label="Go to Kavnet homepage">
+                <img
+                    src="imgs/logonobg3.png"
+                    alt="Kavnet Logo"
+                    class="h-12 md:h-14 w-auto">
+            </a>
+        </div>
+
+        <!-- Perfectly centered -->
+        <!-- <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-8 items-center">
+            <a href="#features" class="hover:text-primary transition-colors">Features</a>
+            <a href="#use-cases" class="hover:text-primary transition-colors">Use Cases</a>
+            <a href="#pricing" class="hover:text-primary transition-colors">Pricing</a>
+        </div> -->
+
+        <!-- Right -->
+        <div class="flex gap-4 items-center">
+            <a
+                href="knform.html"
+                class="hidden lg:block font-button-text text-button-text px-4 py-2 text-on-surface-variant border border-outline-variant/50 rounded hover:border-primary-fixed-dim transition-all">
+                Join Waitlist
+            </a>
+
+            <a
+                href="knform.html"
+                class="bg-primary-fixed-dim text-on-primary-fixed px-6 py-2 rounded font-button-text text-button-text hover:bg-primary-container logic-glow active:scale-95 transition-all">
+                Request Demo
+            </a>
+        </div>
+
+    </div>
+</nav>
+
+<div class="hero-aura" aria-hidden="true">
+    <div class="hero-halo"></div>
+    <div class="hero-light"></div>
+    <div class="grid-overlay"></div>
+</div>
+
+<main class="pt-40 pb-24 px-6">
+
+    <div class="max-w-4xl mx-auto card rounded-xl p-10 md:p-14">
+
+        <!-- <span class="uppercase tracking-[0.3em] text-primary text-sm">
+            Legal
+        </span> -->
+
+        <h1 class="font-heading text-5xl font-semibold mt-4 mb-8">
+            Privacy Policy
+        </h1>
+
+        <p class="text-muted mb-12">
+            Last Updated: 20th July 2026
+        </p>
+
+        <div class="space-y-12 leading-8">
+
+            <section>
+                <h2 class="text-2xl font-heading mb-4">1. Information We Collect</h2>
+
+                <p>
+                    When you submit an inquiry through our website, we may collect:
+                </p>
+
+                <ul class="list-disc ml-8 mt-4 space-y-2">
+                    <li>Full Name</li>
+                    <li>Work Email Address</li>
+                    <li>Company Name</li>
+                    <li>Industry</li>
+                    <li>Inquiry Message</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-heading mb-4">2. How We Use Your Information</h2>
+
+                <p>Your information is used solely to:</p>
+
+                <ul class="list-disc ml-8 mt-4 space-y-2">
+                    <li>Respond to your inquiry.</li>
+                    <li>Schedule demonstrations or consultations.</li>
+                    <li>Provide information about Kavnet products and services.</li>
+                    <li>Improve our services and customer experience.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-heading mb-4">3. Data Storage & Security</h2>
+
+                <p>
+                    We implement reasonable technical and organizational safeguards
+                    to protect the information you provide. Access is limited to
+                    authorized personnel who require it to respond to your request.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-heading mb-4">4. Data Sharing</h2>
+
+                <p>
+                    Kavnet does not sell your personal information.
+                    Information may only be shared with trusted service providers
+                    necessary to operate our website or communications, subject to
+                    appropriate confidentiality obligations.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-heading mb-4">5. Data Retention</h2>
+
+                <p>
+                    We retain inquiry information only for as long as reasonably
+                    necessary to respond to your request, maintain business records,
+                    or comply with applicable legal obligations.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-heading mb-4">6. Your Rights</h2>
+
+                <p>You may request to:</p>
+
+                <ul class="list-disc ml-8 mt-4 space-y-2">
+                    <li>Access your personal information.</li>
+                    <li>Correct inaccurate information.</li>
+                    <li>Request deletion of your information.</li>
+                    <li>Withdraw consent where applicable.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-heading mb-4">7. Contact</h2>
+
+                <p>
+                    Questions regarding this Privacy Policy can be directed to:
+                </p>
+
+                <p class="mt-4 text-primary font-semibold">
+                    kavlabs@kavlabstech.com
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-heading mb-4">8. Policy Updates</h2>
+
+                <p>
+                    We may update this Privacy Policy from time to time to reflect
+                    changes in our practices or legal requirements. The latest
+                    version will always be available on this page.
+                </p>
+            </section>
+
+        </div>
+
+    </div>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 w-full py-16">
+    <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="md:col-span-2">
+            <div class="flex items-center gap-4">
+            <a href="index.html" aria-label="Go to Kavnet homepage">
+                <img
+                    src="imgs/logonobg3.png"
+                    alt="Kavnet Logo"
+                    class="h-12 md:h-14 w-auto">
+            </a>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-sm">
+                Pioneering the localized intelligence revolution. Build, deploy, and own your SLM with the most secure infrastructure.
+            </p>
+            <div class="flex gap-6">
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">terminal</span></a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">shield</span></a>
+            </div>
+        </div>
+        
+        <!-- <div class="">
+            <h5 class="font-bold mb-6">Contact Us</h5>
+            <ul class="space-y-4 text-on-surface-variant text-sm">
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+            </ul>
+        </div> -->
+        <div class="w-full text-right mt-8">
+            <a
+                class="inline-block bg-primary-fixed-dim text-on-primary-fixed px-10 py-5 rounded font-button-text text-button-text text-lg hover:bg-primary-container logic-glow transition-all"
+                href="knform.html">
+                Contact Us
+            </a>
+        </div></div>
+        <div class="max-w-container-max mx-auto px-gutter mt-20 pt-8 border-t border-outline-variant/10 text-center md:text-left">
+            <span class="font-label-mono text-label-mono text-on-surface-variant/60">
+                © 2026 Kavnet. All rights reserved. Privacy-First SLM Solutions.
+            </span>
+        </div>
+</footer>
+
+</body>
+</html>
