@@ -1,0 +1,15 @@
+# Kavnet
+
+Enterprise Small Language Models
+
+Website:
+https://kavnet.kavlabstech.com
+
+Description:
+Private AI infrastructure for enterprises.
+
+Documentation:
+https://kavnet.kavlabstech.com
+
+Contact:
+info@kavlabstech.com
