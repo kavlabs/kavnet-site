@@ -2,14 +2,14 @@
 Kavnet | Private Enterprise Small Language Models (SLMs)
 </title><meta
 name="description"
-content="Deploy private Small Language Models (SLMs) for enterprises with complete data sovereignty, edge AI, and domain-specific intelligence."
+content="Deploy Kavnet as a private Small Language Model (SLMs) for enterprises with complete data sovereignty, edge AI, and domain-specific intelligence."
 ><meta charset="UTF-8"><meta
 name="theme-color"
 content="#0e1320"><meta name="robots"
 content="index,follow"><meta property="og:title" content="Kavnet | Enterprise Small Language Models">
 
 <meta property="og:description"
-content="Deploy private Small Language Models for enterprises with complete data sovereignty and edge AI.">
+content="Deploy Kavnet as a private Small Language Model for enterprises with complete data sovereignty and edge AI.">
 
 <meta property="og:image"
 content="https://kavnet.kavlabstech.com/imgs/logonobgfull3.png">
@@ -189,6 +189,33 @@ href="/apple-touch-icon.png"><link href="https://fonts.googleapis.com/css2?famil
 
                                 animation:pulse 4s ease-in-out infinite;
                             }
+                            details summary {
+                                list-style: none;
+                            }
+
+                            details summary::-webkit-details-marker {
+                                display: none;
+                            }
+
+                            details summary::after {
+                                content: "+";
+                                float: right;
+                                font-size: 28px;
+                                color: #00daf3;
+                                transition: transform .25s ease;
+                            }
+
+                            details[open] summary::after {
+                                content: "−";
+                            }
+
+                            details {
+                                transition: all .25s ease;
+                            }
+
+                            details:hover {
+                                border-color: #00daf3;
+                            }
 
                             @keyframes pulse{
                                 0%,100%{
@@ -246,6 +273,131 @@ href="/apple-touch-icon.png"><link href="https://fonts.googleapis.com/css2?famil
 }
 
 ]
+}
+</script><script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+
+    {
+      "@type":"Question",
+      "name":"What is Kavnet?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Kavnet is an enterprise-grade Small Language Model (SLM) platform engineered for domain-specific intelligence. It is optimized for private deployments, edge inference, enterprise workflows, and complete data sovereignty."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"What makes Kavnet different from traditional LLMs?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Unlike general-purpose Large Language Models, Kavnet focuses on enterprise reasoning using a compact architecture that delivers lower latency, lower infrastructure requirements, improved privacy, native tool calling, and optimized deployment for enterprise environments."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"What is KavAttention?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"KavAttention is Kavnet's proprietary attention mechanism built using a subquadratic attention architecture. It is designed to reduce computational complexity while maintaining high-quality reasoning for enterprise AI workloads."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"Why does subquadratic attention matter?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Traditional transformer attention scales quadratically as context length increases. KavAttention's subquadratic architecture reduces computation and memory requirements, enabling faster inference, improved scalability, lower hardware requirements, and larger practical context windows."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"What is the compressed MLP representation?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Kavnet incorporates a compressed MLP representation that minimizes redundant computation while preserving enterprise reasoning capability. This improves inference efficiency, reduces memory usage, and enables deployment on edge hardware."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"Why use a Small Language Model instead of a Large Language Model?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Enterprise workloads typically require accurate reasoning over proprietary organizational knowledge rather than internet-scale knowledge. Small Language Models provide lower latency, lower operational costs, improved customization, easier deployment, predictable inference, and greater control over enterprise data."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"What is agentic routing?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Agentic routing enables Kavnet to intelligently determine which AI agent, workflow, tool, or knowledge source should execute a particular request. Rather than only generating text, Kavnet orchestrates enterprise workflows and routes tasks to the most appropriate execution pipeline."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"Does Kavnet support tool calling?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes. Kavnet is designed with native tool-calling capabilities, enabling interaction with enterprise APIs, databases, ERP platforms, CRM systems, internal services, search engines, and custom applications as part of intelligent enterprise workflows."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"Can Kavnet run completely offline?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes. Kavnet supports private on-premise and air-gapped deployments, allowing organizations to run AI workloads without relying on external cloud services."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"Who is Kavnet designed for?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Kavnet is designed for organizations requiring secure, domain-specific AI, including manufacturing, healthcare, finance, defense, robotics, industrial automation, logistics, government, and critical infrastructure."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"Can Kavnet be customized for my organization?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes. Kavnet can be adapted to enterprise terminology, proprietary workflows, documentation, tools, and organizational knowledge, allowing organizations to deploy AI systems tailored to their operational requirements."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"How is enterprise data protected?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Kavnet follows a privacy-first architecture where enterprise data remains within customer-controlled infrastructure. Organizations retain ownership of their models, knowledge, and sensitive information while meeting governance and compliance requirements."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"Is Kavnet suitable for AI agents?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes. Kavnet is specifically engineered for AI agents that require reasoning, planning, workflow execution, API interaction, native tool orchestration, and enterprise automation."
+      }
+    }
+
+  ]
 }
 </script></head><body class="font-body-md text-body-md overflow-x-hidden bg-background text-on-background">
 
@@ -595,6 +747,214 @@ href="/apple-touch-icon.png"><link href="https://fonts.googleapis.com/css2?famil
             <div class="flex flex-col md:flex-row justify-center items-center gap-6">
                 <a class="bg-primary-fixed-dim text-on-primary-fixed px-10 py-5 rounded font-button-text text-button-text text-lg hover:bg-primary-container logic-glow transition-all" href="knform.html">Contact Us for Pricing</a>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="py-20 md:py-32 bg-surface-container-low">
+    <div class="max-w-container-max mx-auto px-gutter">
+
+        <div class="text-center mb-16">
+            <h2 class="font-headline-lg text-headline-lg mb-4">
+                Frequently Asked Questions
+            </h2>
+
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto">
+                Learn how Kavnet's proprietary Small Language Model architecture,
+                KavAttention, and enterprise-first design enable secure,
+                low-latency AI deployments.
+            </p>
+        </div>
+
+        <div class="space-y-4">
+
+            <details name="faq" class="bg-surface border border-outline-variant rounded-xl p-6">
+                <summary class="cursor-pointer font-headline-md text-lg text-primary">
+                    What is Kavnet?
+                </summary>
+
+                <p class="mt-4 text-on-surface-variant leading-7">
+                    Kavnet is an enterprise-grade Small Language Model (SLM)
+                    platform engineered for domain-specific intelligence.
+                    Unlike general-purpose cloud LLMs, Kavnet is optimized
+                    for private deployments, edge inference, enterprise
+                    workflows, and complete data sovereignty.
+                </p>
+            </details>
+
+            <details name="faq" class="bg-surface border border-outline-variant rounded-xl p-6">
+                <summary class="cursor-pointer font-headline-md text-lg text-primary">
+                    What makes Kavnet different from traditional LLMs?
+                </summary>
+
+                <p class="mt-4 text-on-surface-variant leading-7">
+                    Traditional Large Language Models prioritize broad,
+                    internet-scale knowledge across massive parameter counts.
+                    Kavnet focuses on enterprise reasoning using a compact,
+                    domain-specific architecture that delivers lower latency,
+                    lower infrastructure requirements, improved privacy,
+                    and better operational efficiency.
+                </p>
+            </details>
+
+            <details name="faq" class="bg-surface border border-outline-variant rounded-xl p-6">
+                <summary class="cursor-pointer font-headline-md text-lg text-primary">
+                    What is KavAttention?
+                </summary>
+
+                <p class="mt-4 text-on-surface-variant leading-7">
+                    KavAttention is Kavnet's proprietary attention module
+                    designed with a subquadratic attention mechanism.
+                    It enables significantly more efficient inference than
+                    conventional transformer attention while maintaining
+                    high-quality reasoning across enterprise workloads.
+                </p>
+            </details>
+
+            <details name="faq" class="bg-surface border border-outline-variant rounded-xl p-6">
+                <summary class="cursor-pointer font-headline-md text-lg text-primary">
+                    Why does subquadratic attention matter?
+                </summary>
+
+                <p class="mt-4 text-on-surface-variant leading-7">
+                    Standard transformer attention scales quadratically as
+                    context length increases, leading to rapidly growing
+                    compute and memory requirements.
+                    KavAttention's subquadratic design reduces computational
+                    complexity, enabling faster inference, larger practical
+                    context windows, improved GPU utilization, and lower
+                    deployment costs.
+                </p>
+            </details>
+
+            <details name="faq" class="bg-surface border border-outline-variant rounded-xl p-6">
+                <summary class="cursor-pointer font-headline-md text-lg text-primary">
+                    What is the compressed MLP representation?
+                </summary>
+
+                <p class="mt-4 text-on-surface-variant leading-7">
+                    Kavnet utilizes a compressed MLP representation that
+                    minimizes redundant computation while preserving
+                    domain-specific reasoning capabilities. This reduces
+                    memory consumption, lowers inference cost, and allows
+                    deployment on edge hardware without sacrificing enterprise
+                    performance.
+                </p>
+            </details>
+
+            <details name="faq" class="bg-surface border border-outline-variant rounded-xl p-6">
+                <summary class="cursor-pointer font-headline-md text-lg text-primary">
+                    Why use a Small Language Model instead of a Large Language Model?
+                </summary>
+
+                <p class="mt-4 text-on-surface-variant leading-7">
+                    Most enterprise workflows require accurate reasoning over
+                    proprietary organizational knowledge rather than broad
+                    internet knowledge. Small Language Models provide lower
+                    latency, significantly lower operational costs, improved
+                    customization, easier deployment, predictable performance,
+                    and greater control over sensitive data.
+                </p>
+            </details>
+
+            <details name="faq" class="bg-surface border border-outline-variant rounded-xl p-6">
+                <summary class="cursor-pointer font-headline-md text-lg text-primary">
+                    What is agentic routing?
+                </summary>
+
+                <p class="mt-4 text-on-surface-variant leading-7">
+                    Agentic routing is Kavnet's capability to intelligently
+                    determine which AI agent, workflow, tool, or knowledge
+                    source should handle a specific request. Instead of simply
+                    generating text, Kavnet coordinates enterprise workflows
+                    and routes tasks to the appropriate execution pipeline.
+                </p>
+            </details>
+
+            <details name="faq" class="bg-surface border border-outline-variant rounded-xl p-6">
+                <summary class="cursor-pointer font-headline-md text-lg text-primary">
+                    Does Kavnet support tool calling?
+                </summary>
+
+                <p class="mt-4 text-on-surface-variant leading-7">
+                    Yes. Kavnet is designed with native tool-calling
+                    capabilities, allowing it to invoke enterprise APIs,
+                    databases, ERP platforms, CRM systems, internal services,
+                    search engines, and custom business applications as part
+                    of intelligent workflows.
+                </p>
+            </details>
+
+            <details name="faq" class="bg-surface border border-outline-variant rounded-xl p-6">
+                <summary class="cursor-pointer font-headline-md text-lg text-primary">
+                    Can Kavnet run completely offline?
+                </summary>
+
+                <p class="mt-4 text-on-surface-variant leading-7">
+                    Yes. Kavnet supports private on-premise and air-gapped
+                    deployments, enabling organizations to operate AI
+                    workloads without relying on external cloud services.
+                    This makes it suitable for regulated industries,
+                    defense environments, and critical infrastructure.
+                </p>
+            </details>
+
+            <details name="faq" class="bg-surface border border-outline-variant rounded-xl p-6">
+                <summary class="cursor-pointer font-headline-md text-lg text-primary">
+                    Who is Kavnet designed for?
+                </summary>
+
+                <p class="mt-4 text-on-surface-variant leading-7">
+                    Kavnet is built for organizations requiring secure,
+                    domain-specific AI, including manufacturing,
+                    healthcare, finance, defense, robotics,
+                    industrial automation, government,
+                    logistics, and critical infrastructure.
+                </p>
+            </details>
+
+            <details name="faq" class="bg-surface border border-outline-variant rounded-xl p-6">
+                <summary class="cursor-pointer font-headline-md text-lg text-primary">
+                    Can Kavnet be customized for my organization?
+                </summary>
+
+                <p class="mt-4 text-on-surface-variant leading-7">
+                    Yes. Kavnet is designed to be fine-tuned for enterprise
+                    terminology, workflows, documentation, and proprietary
+                    knowledge, allowing organizations to deploy AI systems
+                    tailored to their operational requirements.
+                </p>
+            </details>
+
+            <details name="faq" class="bg-surface border border-outline-variant rounded-xl p-6">
+                <summary class="cursor-pointer font-headline-md text-lg text-primary">
+                    How is enterprise data protected?
+                </summary>
+
+                <p class="mt-4 text-on-surface-variant leading-7">
+                    Kavnet follows a privacy-first architecture where
+                    enterprise data remains within customer-controlled
+                    infrastructure. Organizations retain ownership of
+                    their models, knowledge, and sensitive information,
+                    helping satisfy governance and compliance requirements.
+                </p>
+            </details>
+
+            <details name="faq" class="bg-surface border border-outline-variant rounded-xl p-6">
+                <summary class="cursor-pointer font-headline-md text-lg text-primary">
+                    Is Kavnet suitable for AI agents?
+                </summary>
+
+                <p class="mt-4 text-on-surface-variant leading-7">
+                    Absolutely. Kavnet was architected specifically for
+                    AI agents that require reasoning, tool orchestration,
+                    workflow execution, API interaction, planning,
+                    and enterprise automation rather than only
+                    conversational responses.
+                </p>
+            </details>
+
         </div>
     </div>
 </section>
